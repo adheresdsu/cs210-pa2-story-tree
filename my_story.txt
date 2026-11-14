@@ -1,6 +1,108 @@
 START_HP 10
-SCENE Replace this file with your own story.
+SCENE You are Alia Bhatt, a campus driver at the Moonlight Miles gala. The trophy vanishes at midnight, and rival driver Ranbir Kapoor offers to help you find it before dawn.
 HP 0
 LOOT 0
 ITEM none
-CHOICES 0
+CHOICES 3
+LABEL Take the rich student's expensive ride
+  SCENE A student offers a huge tip for a ride across campus. Ranbir Kapoor says the shortcut on the map is closed.
+  HP -2
+  LOOT 8
+  ITEM Cash Tip
+  CHOICES 2
+  LABEL Trust the shortcut anyway
+    SCENE Your car gets stuck at the locked tunnel. You miss the gala deadline and the tow truck takes your last cash.
+    HP -9
+    LOOT 4
+    ITEM Tow Receipt
+    CHOICES 0
+  LABEL Listen to Ranbir Kapoor and turn back
+    SCENE You reach the dorm safely, but someone else solves the mystery. Ranbir Kapoor still saves you a seat at breakfast.
+    HP 0
+    LOOT 1
+    ITEM Breakfast Voucher
+    CHOICES 0
+LABEL Give Ranbir Kapoor a ride to investigate
+  SCENE Ranbir Kapoor hops into your passenger seat with a grin. The trophy case has a muddy tire track beside it.
+  HP 0
+  LOOT 1
+  ITEM Spare Helmet
+  CHOICES 2
+  LABEL Check the parking garage cameras
+    SCENE The garage footage shows the campus mascot pushing a covered cart toward the old theater.
+    HP -1
+    LOOT 2
+    ITEM Camera Clip
+    CHOICES 2
+    LABEL Report the clip to campus security
+      SCENE Security recovers the trophy. You get a thank-you note, and Ranbir Kapoor asks for your number.
+      HP 0
+      LOOT 3
+      ITEM Thank You Note
+      CHOICES 0
+    LABEL Follow the cart to the theater
+      SCENE The theater door is locked. Ranbir Kapoor spots a maintenance hatch behind the stage.
+      HP -2
+      LOOT 1
+      ITEM none
+      CHOICES 1
+      LABEL Crawl through the hatch together
+        SCENE You find the trophy and hear the student council president rehearsing a fake rescue speech.
+        HP -1
+        LOOT 2
+        ITEM Trophy Photo
+        CHOICES 2
+        LABEL Confront the president alone
+          SCENE The president grabs the trophy and runs. You keep the photo, but nobody believes your story.
+          HP -5
+          LOOT 4
+          ITEM Crumpled Flyer
+          CHOICES 0
+        LABEL Let Ranbir Kapoor record the confession
+          SCENE Ranbir Kapoor records the staged theft. You return the trophy, split the reward, and turn your first date into a sunrise drive.
+          HP 1
+          LOOT 8
+          ITEM Voice Recording
+          CHOICES 0
+  LABEL Ask the band about the missing trophy
+    SCENE The band saw the mascot leave with a cart. Ranbir Kapoor teases you for knowing every lyric to their set.
+    HP 0
+    LOOT 2
+    ITEM Setlist
+    CHOICES 2
+    LABEL Sing a duet to distract the crowd
+      SCENE Your duet goes viral. The trophy is found later, and Ranbir Kapoor wants an encore with you.
+      HP 1
+      LOOT 1
+      ITEM Signed Setlist
+      CHOICES 0
+    LABEL Follow the clue in the final song
+      SCENE The last verse mentions the roof. You and Ranbir Kapoor race up the stairs before the gala lights go out.
+      HP -1
+      LOOT 3
+      ITEM Lyric Note
+      CHOICES 1
+      LABEL Catch the mascot on the roof
+        SCENE You catch the mascot carrying an empty cart. Ranbir Kapoor finds the trophy downstairs, and you celebrate together.
+        HP -4
+        LOOT 5
+        ITEM Rooftop Ticket
+        CHOICES 0
+LABEL Drive the dean to the after-party
+  SCENE The dean needs a ride and offers a parking pass. Ranbir Kapoor waves from the opposite lane.
+  HP -1
+  LOOT 2
+  ITEM Parking Pass
+  CHOICES 2
+  LABEL Cash in the parking pass
+    SCENE You sell the pass to a desperate senior. The mystery stays unsolved, but you finally pay for gas.
+    HP 0
+    LOOT 3
+    ITEM Gas Coupon
+    CHOICES 0
+  LABEL Ask the dean about the trophy
+    SCENE The dean admits the award was insured. You share the tip with Ranbir Kapoor, and the two of you plan another midnight ride.
+    HP 1
+    LOOT 2
+    ITEM Insurance Form
+    CHOICES 0
